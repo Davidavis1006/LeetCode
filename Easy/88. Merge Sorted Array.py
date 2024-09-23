@@ -19,11 +19,13 @@ class Solution(object):
                 mergeArray.append(nums2[j])
                 j+=1
 
-        while (i<m):
+        # append remainings in nums1
+        while i<m:
             mergeArray.append(nums1[i])
             i+=1
 
-        while (j<n):
+        # append remainings in nums2
+        while j<n:
             mergeArray.append(nums2[j])
             j+=1
 
