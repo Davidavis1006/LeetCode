@@ -4,6 +4,6 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        words=s.split()
-
-        return len(words[len(words)-1])
+        words=s.split() # leading and trailing whitespaces are ignored in the returned list
+        
+        return len(words[-1])
